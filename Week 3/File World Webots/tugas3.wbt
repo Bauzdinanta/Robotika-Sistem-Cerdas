@@ -1,0 +1,32 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Wall.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.49125274482849307 0.49805497845042185 0.7145711854946443 1.887682709910328
+  position 0.09680252111549342 -0.8539070780477338 2.3600728549215932
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  rotation 1 0 0 -0.523595307179586
+  floorSize 2 2
+}
+E-puck {
+  translation 2.1927248148620015e-06 0.0032336004994043327 -0.0025037133837448166
+  rotation -0.9999975094260309 -0.002161264592337934 0.0005568456669020513 0.40726079848592983
+  controller "my_controller_tugas3proxymity"
+}
+Wall {
+  translation 0.64 0 0
+  rotation -1 0 0 0.5235953071795861
+  size 0.1 0.5 0.2
+}
