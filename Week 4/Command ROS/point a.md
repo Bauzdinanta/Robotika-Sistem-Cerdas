@@ -1,4 +1,4 @@
-source /opt/ros/iron/setup.bash
+source /opt/ros/humble/setup.bash
 
 sudo apt install python3-rosdep
 
@@ -17,7 +17,7 @@ sudo apt install python3-vcstool
 mkdir -p ~/ws_moveit/src
 
 cd ~/ws_moveit/src
-git clone -b <branch> https://github.com/moveit/moveit2_tutorials
+git clone --branch humble https://github.com/moveit/moveit2_tutorials
 
 vcs import --recursive < moveit2_tutorials/moveit2_tutorials.repos
 
