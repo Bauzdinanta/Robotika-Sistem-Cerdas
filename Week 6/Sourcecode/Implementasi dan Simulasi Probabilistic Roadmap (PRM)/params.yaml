@@ -1,0 +1,6 @@
+num_nodes: 100
+connection_radius: 5.0
+x_max: 20
+y_max: 20
+start: [0, 0]
+goal: [20, 20]
