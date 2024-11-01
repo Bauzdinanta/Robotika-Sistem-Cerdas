@@ -13,11 +13,14 @@ Buat file prm.py :
 Buat file params.yaml :
 ![image](https://github.com/user-attachments/assets/35294ee2-3e4e-40c4-bd64-3524af2a2b37)
 
-Ubah file steup.py :
+Buat file params.launch :
+![image](https://github.com/user-attachments/assets/db348c47-dbfc-4ab2-b516-e857cafb994f)
+
+Ubah file setup.py :
 ![image](https://github.com/user-attachments/assets/8dc4824c-508b-4d0e-9ebd-2ced398a60e9)
 
 Build Project :
 ![image](https://github.com/user-attachments/assets/7677d1ff-5db6-4dfe-a1ff-acdc615ef0ec)
 
 Output :
-![image](https://github.com/user-attachments/assets/8bf7494a-6a15-45a8-a502-eb7709214069)
+![image](https://github.com/user-attachments/assets/2904ddd5-385b-4171-9494-92e90bfa2385)
