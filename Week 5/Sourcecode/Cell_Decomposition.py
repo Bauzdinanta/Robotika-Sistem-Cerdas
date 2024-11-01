@@ -25,6 +25,15 @@ def cell_decomposition(start, goal, grid):
 
     return []
 
+# Example grid definition
+grid = [
+    [0, 0, 0, 0, 0],
+    [0, 1, 1, 1, 0],
+    [0, 0, 0, 1, 0],
+    [0, 1, 0, 0, 0],
+    [0, 0, 0, 0, 0]
+]
+
 # Example usage
 start = (0, 0)
 goal = (4, 4)
