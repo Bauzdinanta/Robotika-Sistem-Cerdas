@@ -1,0 +1,54 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "../protos/TrackOne.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.20982450268610062 -0.04858943160808023 -0.976530975037932 3.586371973532792
+  position 1.1663125528630351 -0.5666787458136078 0.5545424125968729
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2 2
+  floorAppearance NULL
+}
+E-puck {
+  hidden position_0_0 131.90030008788787
+  hidden position_0_1 149.5231927161504
+  hidden linearVelocity_0 0.03311521598753516 -0.0024329713868042288 2.9462700743465455e-06
+  hidden angularVelocity_0 -0.020479850520140886 -0.2980488058922031 9.196176363439367e-06
+  hidden rotation_1 0 1 0 6.236593944296138
+  hidden linearVelocity_1 0.03161472134032879 -0.0023930716357928672 -3.2646796934710145e-06
+  hidden angularVelocity_1 0.11971210957371635 1.5807317932799867 -0.0011460080517175372
+  hidden rotation_2 0 -1 0 1.2732546561596851
+  hidden linearVelocity_2 0.031623008795478184 -0.0022789938669698015 -9.444444244888453e-07
+  hidden angularVelocity_2 0.11389112897047694 1.5811543214801547 -1.3725218621529376e-05
+  translation 0.02828036082087898 -0.11549377480471217 -6.434152444560401e-05
+  rotation 0.006753773817037293 0.12748881365644418 0.9918170138345584 -0.07302027278319834
+  controller "Line_Follower"
+  groundSensorsSlot [
+    DistanceSensor {
+      translation 0 0.02 0
+      rotation 0 1 0 1.5708
+      name "ir1"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0 -0.01 0
+      rotation 0 1 0 1.5708
+      name "ir0"
+      type "infra-red"
+    }
+  ]
+}
+TrackOne {
+  translation 0 0 0.0075
+}
