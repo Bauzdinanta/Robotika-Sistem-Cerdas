@@ -1,3 +1,3 @@
-roslaunch mastering_ros_robot_description_pkg view_demo.launch
-roslaunch mastering_ros_robot_description_pkg view_arm.launch
-roslaunch mastering_ros_robot_description_pkg view_mobile_robot.launch
+ros2 launch mastering_ros_robot_description_pkg view_demo.launch
+ros2 launch mastering_ros_robot_description_pkg view_arm.launch
+ros2 launch mastering_ros_robot_description_pkg view_mobile_robot.launch
