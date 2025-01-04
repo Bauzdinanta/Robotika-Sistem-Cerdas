@@ -1,8 +1,7 @@
-Pengenalan ROS dan Cara Installnya di Ubuntu
-Pendahuluan
+Assalamualaikum wr.wb
+
 "Halo semuanya! Dalam video ini, kita akan mengenal apa itu ROS (Robot Operating System) dan bagaimana cara menginstalnya di sistem operasi Ubuntu. Kalau kalian tertarik dengan dunia robotika, ROS adalah salah satu platform yang wajib kalian pelajari!"
 
-Bagian 1: 
 Apa itu ROS?
 "ROS atau Robot Operating System adalah kerangka kerja perangkat lunak open-source yang digunakan untuk mengembangkan aplikasi robotika. ROS membantu pengembang mengontrol robot dengan lebih mudah, menyediakan tools dan library untuk berbagai keperluan seperti pemetaan, navigasi, dan manipulasi objek."
 
@@ -61,5 +60,4 @@ Tambahkan setup ROS2 ke ~/.bashrc agar otomatis dijalankan setiap kali terminal 
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
-Penutup
 "Sekarang kalian sudah memiliki ROS 2 Humble terinstal di sistem kalian! Dengan ROS, kalian bisa mulai mengembangkan aplikasi robotika yang canggih dan kreatif. Jangan lupa untuk bergabung dengan komunitas ROS untuk belajar lebih lanjut dan berbagi pengalaman!"
