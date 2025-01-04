@@ -1,6 +1,6 @@
 Assalamualaikum wr.wb
 
-Pada video kedua kali ini, saya akan menunjukkan bagaimana cara ROS berkomunikasi
+Pada video kedua kali ini, saya akan menunjukkan bagaimana cara memprogram komunikasi ROS
 
 pertama, pastikan untuk clone repository dengan perintah : 
 git clone https://github.com/PacktPublishing/Mastering-ROS-for-Robotics-Programming-Third-edition
