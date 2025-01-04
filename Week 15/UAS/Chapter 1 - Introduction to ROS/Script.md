@@ -21,38 +21,45 @@ Distribusi ROS:
 Bagian 2: Cara Install ROS
 "Sekarang kita akan masuk ke langkah-langkah instalasi ROS. Di sini, kita akan menginstal ROS 2 Humble di Ubuntu 22.04."
 
-Langkah 1: Update Sistem
+Pertama, pastikan sistem Ubuntu Anda sudah diperbarui:
 
-sudo apt update && sudo apt upgrade -y
+sudo apt update
+sudo apt upgrade
 
-Langkah 2: Tambahkan Repository ROS
+Tambahkan repositori ROS2:
 
 sudo apt install software-properties-common
 sudo add-apt-repository universe
+
+Tambahkan GPG key ROS2:
+
+sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+
+Tambahkan repositori ROS2 ke sources list:
+
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+
+Perbarui package list:
+
 sudo apt update
 
-Langkah 3: Tambahkan GPG Key dan Repository ROS 2
-
-sudo apt install curl -y
-curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
-echo "deb [arch=$(dpkg --print-architecture)] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
-sudo apt update
-
-Langkah 4: Instalasi ROS
+Install ROS2 Humble (pilih salah satu opsi):
+Untuk instalasi Desktop penuh (Recommended):
 
 sudo apt install ros-humble-desktop
-"Paket ini akan menginstal ROS 2 Humble dengan semua fitur utama seperti navigasi, pemetaan, dan kontrol robot."
 
-Langkah 5: Set Variabel Lingkungan
-Tambahkan konfigurasi ke file ~/.bashrc:
+Atau untuk instalasi Base saja (minimal):
+
+sudo apt install ros-humble-ros-base
+
+Install development tools:
+
+sudo apt install ros-dev-tools
+
+Tambahkan setup ROS2 ke ~/.bashrc agar otomatis dijalankan setiap kali terminal dibuka:
 
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 source ~/.bashrc
-
-Langkah 6: Verifikasi Instalasi
-Untuk memeriksa instalasi, jalankan:
-
-ros2 --version
 
 Penutup
 "Sekarang kalian sudah memiliki ROS 2 Humble terinstal di sistem kalian! Dengan ROS, kalian bisa mulai mengembangkan aplikasi robotika yang canggih dan kreatif. Jangan lupa untuk bergabung dengan komunitas ROS untuk belajar lebih lanjut dan berbagi pengalaman!"
