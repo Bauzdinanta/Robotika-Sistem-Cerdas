@@ -1,0 +1,3 @@
+roslaunch mastering_ros_robot_description_pkg view_demo.launch
+roslaunch mastering_ros_robot_description_pkg view_arm.launch
+roslaunch mastering_ros_robot_description_pkg view_mobile_robot.launch
